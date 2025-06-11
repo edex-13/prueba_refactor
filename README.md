@@ -12,7 +12,7 @@ cd dashboards_api_ederson-felipe-lopez-bolivar
 ```
 ## 🚀 Despliegue Rápido
 
-Para desplegar la aplicación, ejecuta estos **3 comandos**:
+Para desplegar la aplicación, ejecuta estos **2 comandos**:
 
 ```bash
 # 1. Construir la imagen Docker
@@ -31,6 +31,7 @@ Una vez desplegada, la aplicación estará disponible en:
 
 
 ### Desarrollo local (sin Docker)
+Si desea ejecutar el proyecto en desarrollo :
 ```bash
 # Instalar dependencias
 npm install
