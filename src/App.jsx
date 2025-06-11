@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
-import Overview from "./components/Overview/Overview"
+import Overview from "./pages/Overview"
 // import Overview from "./pages/Overview";
-import "./App.css"
+import "./styles/main.css"; // Assuming you have a CSS file for global styles
 import React, { useState } from "react";
 
 

@@ -1,9 +1,8 @@
 // components/Overview/TabContent.jsx
-import { formatDate } from "../../utils/formatDate";
 import React from "react";
 
 
-const TabContent = ({ items, label, search, setSearch, sortBy, setSortBy, toggleFavorite, favorites }) => {
+const TabContent = ({ items, label, search, setSearch, sortBy, setSortBy, toggleImportant, important  , selectedProject}) => {
   const filtered = items.filter((item) =>
     item.nombre?.toLowerCase().includes(search.toLowerCase()) ||
     item.autor?.toLowerCase().includes(search.toLowerCase()) ||
@@ -21,6 +20,14 @@ const TabContent = ({ items, label, search, setSearch, sortBy, setSortBy, toggle
     }
   });
 
+  if (!selectedProject ) {
+    return (
+      <div className="no-data-container">
+        <div className="no-data-icon">📊</div>
+        <p className="no-data">Seleccione un proyecto para ver los detalles</p>
+      </div>
+    );
+  }
   return (
     <>
       <div className="controls-row">
@@ -55,21 +62,21 @@ const TabContent = ({ items, label, search, setSearch, sortBy, setSortBy, toggle
                 <div className="fuente-title">
                   <h4>{item.nombre}</h4>
                   <button
-                    className={`favorite-btn ${favorites.has(item.nombre) ? 'active' : ''}`}
+                    className={`favorite-btn ${important.has(item.nombre) ? 'active' : ''}`}
                     onClick={(e) => {
                       e.stopPropagation();
-                      toggleFavorite(item.nombre);
-                    }}
+                      toggleImportant(item.nombre);
+                    }}  
                   >
-                    {favorites.has(item.nombre) ? '★' : '☆'}
+                  {important.has(item.nombre) ? '❗' : '❕'}
                   </button>
                 </div>
                 <p className="item-description">{item.descripcion}</p>
                 <div className="item-meta">
                   <span className="item-author">👤 {item.autor}</span>
-                  <span className="item-date">📅 {formatDate(item.fecha_creacion)}</span>
+                  <span className="item-date">📅 {(item.fecha_creacion)}</span>
                   {item.fecha_ultima_modificacion && item.fecha_ultima_modificacion !== "No registra" && (
-                    <span className="item-modified">🔄 Modificado: {formatDate(item.fecha_ultima_modificacion)}</span>
+                    <span className="item-modified">🔄 Modificado: {(item.fecha_ultima_modificacion)}</span>
                   )}
                 </div>
               </div>

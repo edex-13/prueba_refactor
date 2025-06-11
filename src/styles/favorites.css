@@ -1,0 +1,39 @@
+.favorites-section {
+  border-left: 4px solid #f01d1d;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(135deg, #ffcdcd, #ffa7a7);
+  border: 1px solid #f01d1d;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #850404;
+}
+
+.remove-favorite {
+  background: none;
+  border: none;
+  color: #856404;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.1rem 0.3rem;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.remove-favorite:hover {
+  background: rgba(133, 100, 4, 0.2);
+  transform: scale(1.1);
+}

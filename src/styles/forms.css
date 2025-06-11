@@ -1,0 +1,75 @@
+.project-selector label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #495057;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-selector input,
+.project-selector select {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #dee2e6;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.project-selector input:focus,
+.project-selector select:focus {
+  outline: none;
+  border-color: #114488;
+  box-shadow: 0 0 0 3px rgba(17, 68, 136, 0.1);
+}
+
+.controls-row {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+}
+
+.search-bar input {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #dee2e6;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #114488;
+  box-shadow: 0 0 0 3px rgba(17, 68, 136, 0.1);
+}
+
+.sort-selector {
+  min-width: 200px;
+}
+
+.sort-selector select {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 2px solid #dee2e6;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.sort-selector select:focus {
+  outline: none;
+  border-color: #114488;
+  box-shadow: 0 0 0 3px rgba(17, 68, 136, 0.1);
+}

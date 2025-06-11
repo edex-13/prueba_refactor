@@ -1,0 +1,25 @@
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.header p {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.resumen h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.resumen > p {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}

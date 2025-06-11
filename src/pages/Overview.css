@@ -45,6 +45,7 @@
         }
 
         .hamburger span {
+          
           width: 25px;
           height: 3px;
           background: white;
@@ -455,7 +456,7 @@
         }
 
         .favorites-section {
-          border-left: 4px solid #ffd700;
+          border-left: 4px solid #f01d1d;
         }
 
         .favorites-list {
@@ -470,11 +471,11 @@
           align-items: center;
           gap: 0.5rem;
           padding: 0.5rem 0.75rem;
-          background: linear-gradient(135deg, #fff3cd, #ffeaa7);
-          border: 1px solid #ffd700;
+          background: linear-gradient(135deg, #ffcdcd, #ffa7a7);
+          border: 1px solid #f01d1d;
           border-radius: 20px;
           font-size: 0.9rem;
-          color: #856404;
+          color: #850404;
         }
 
         .remove-favorite {

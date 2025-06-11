@@ -3,6 +3,8 @@
 import React from "react";
 
 const ResumenTabs = ({ activeTab, setActiveTab, resumen }) => (
+  <>
+  <h2>Resumen del proyecto:</h2>
   <div className="tabs">
     <div className={`tab ${activeTab === "fuentes" ? "active" : ""}`} onClick={() => setActiveTab("fuentes")}>
       Fuentes de Datos ({resumen?.fuentes?.length || 0})
@@ -14,6 +16,7 @@ const ResumenTabs = ({ activeTab, setActiveTab, resumen }) => (
       Reportes ({resumen?.tableros?.length || 0})
     </div>
   </div>
+  </>
 );
 
 export default ResumenTabs;

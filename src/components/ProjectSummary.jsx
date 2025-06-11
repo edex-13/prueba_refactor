@@ -1,7 +1,6 @@
 // components/Overview/ProjectSummary.jsx
 import React from "react";
 
-import { formatDate } from "../../utils/formatDate";
 
 const ProjectSummary = ({ selectedProject }) => {
   if (!selectedProject ) {
@@ -18,11 +17,11 @@ const ProjectSummary = ({ selectedProject }) => {
       <h3>{selectedProject?.nombre}</h3>
       <p>{selectedProject?.descripcion}</p>
       <div className="project-meta">
-        <span>📅 Creado: {formatDate(selectedProject?.fecha_creacion)}</span>
+        <span>📅 Creado: {(selectedProject?.fecha_creacion)}</span>
         <span>👤 Autor: {selectedProject?.autor}</span>
         <span>👥 Grupo: {selectedProject?.grupo_proyecto}</span>
         {selectedProject?.fecha_ultima_modificacion && selectedProject?.fecha_ultima_modificacion !== "No registra" && (
-          <span>🔄 Modificado: {formatDate(selectedProject?.fecha_ultima_modificacion)}</span>
+          <span>🔄 Modificado: {(selectedProject?.fecha_ultima_modificacion)}</span>
         )}
       </div>
 
