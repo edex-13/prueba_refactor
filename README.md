@@ -9,6 +9,7 @@ Para comenzar, clona este repositorio en tu máquina local usando el siguiente c
 ```bash
 git clone https://github.com/edex-13/dashboards_api_ederson-felipe-lopez-bolivar.git
 cd dashboards_api_ederson-felipe-lopez-bolivar
+```
 ## 🚀 Despliegue Rápido
 
 Para desplegar la aplicación, ejecuta estos **3 comandos**:
