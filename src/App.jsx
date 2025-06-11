@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
-import Overview from "./pages/Overview"
+import Overview from "./components/Overview/Overview"
+// import Overview from "./pages/Overview";
 import "./App.css"
 import React, { useState } from "react";
 
